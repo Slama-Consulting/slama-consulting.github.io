@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SLAMA Consulting — مدونة تقنية: مقالات عن تطوير التطبيقات، الذكاء الاصطناعي، الحوسبة السحابية، تصميم UX والأمن السيبراني.">
+    <title>المدونة — SLAMA Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>[dir="rtl"] body { font-family: 'Noto Sans Arabic', 'Space Grotesk', sans-serif; }</style>
+</head>
+<body>
+
+    <!-- ══ Navbar ══ -->
+    <nav class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="navbar-logo">
+                <span class="logo-icon">SC</span>
+                SLAMA Consulting
+            </a>
+            <button class="nav-toggle" aria-label="القائمة">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="navbar-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="services.html">الخدمات</a></li>
+                <li><a href="portfolio.html">المشاريع</a></li>
+                <li><a href="blog.html" class="active">المدونة</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+                <li class="navbar-cta"><a href="contact.html" class="btn btn-primary">عرض أسعار مجاني</a></li>
+                <li class="lang-switcher">
+                    <a href="../blog.html" class="lang-btn">EN</a>
+                    <a href="../fr/blog.html" class="lang-btn">FR</a>
+                    <a href="blog.html" class="lang-btn active">AR</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ══ Hero ══ -->
+    <section class="hero" style="padding-bottom:40px;">
+        <div class="container" style="text-align:center;">
+            <div class="section-label">المدونة</div>
+            <h1 style="font-size:44px;font-weight:700;margin-bottom:16px;">أخبار و<span style="color:var(--primary);">رؤى تقنية</span></h1>
+            <p style="font-size:18px;color:var(--ink-light);max-width:600px;margin:0 auto;">اكتشف مقالاتنا حول أحدث الاتجاهات التقنية، تطوير التطبيقات، الذكاء الاصطناعي والمزيد.</p>
+        </div>
+    </section>
+
+    <!-- ══ Blog Grid ══ -->
+    <section class="section">
+        <div class="container">
+            <div class="blog-grid">
+
+                <!-- Article 1 : Mobile -->
+                <div class="blog-card brutal-card">
+                    <div class="blog-thumb" style="background:linear-gradient(135deg,#FF6B35,#E55A2B);">
+                        <span>📱</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-tag mobile">تطبيقات</span>
+                        <h3>Jetpack Compose: مستقبل تطوير أندرويد</h3>
+                        <p>كيف تُحوّل أداة Google التصريحية طريقة إنشاء واجهات أندرويد الحديثة والتفاعلية والقابلة للصيانة.</p>
+                        <div class="blog-date">15 مارس 2026</div>
+                    </div>
+                </div>
+
+                <!-- Article 2 : IA -->
+                <div class="blog-card brutal-card">
+                    <div class="blog-thumb" style="background:linear-gradient(135deg,#00897B,#00695C);">
+                        <span>🤖</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-tag cloud">ذكاء اصطناعي</span>
+                        <h3>الذكاء الاصطناعي في خدمة الشركات عام 2026</h3>
+                        <p>التطبيقات العملية للذكاء الاصطناعي التوليدي لتحسين الإنتاجية وأتمتة العمليات التجارية.</p>
+                        <div class="blog-date">8 مارس 2026</div>
+                    </div>
+                </div>
+
+                <!-- Article 3 : Cloud -->
+                <div class="blog-card brutal-card">
+                    <div class="blog-thumb" style="background:linear-gradient(135deg,#FFB300,#FF8F00);">
+                        <span>☁️</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-tag ai">سحابة</span>
+                        <h3>الهجرة إلى السحابة: دليل عملي للشركات</h3>
+                        <p>الخطوات الأساسية لنجاح هجرتك إلى السحابة بأمان تام، من التخطيط إلى النشر.</p>
+                        <div class="blog-date">1 مارس 2026</div>
+                    </div>
+                </div>
+
+                <!-- Article 4 : UX -->
+                <div class="blog-card brutal-card">
+                    <div class="blog-thumb" style="background:linear-gradient(135deg,#9C27B0,#7B1FA2);">
+                        <span>🎨</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-tag mobile" style="background:rgba(156,39,176,0.1);color:#9C27B0;">تصميم UX</span>
+                        <h3>تصميم Neo-Brutalism في واجهات المستخدم</h3>
+                        <p>كيف يضفي أسلوب Neo-Brutalism لمسة جريئة وعصرية على واجهات المستخدم مع الحفاظ على الوظائفية.</p>
+                        <div class="blog-date">22 فبراير 2026</div>
+                    </div>
+                </div>
+
+                <!-- Article 5 : Performance -->
+                <div class="blog-card brutal-card">
+                    <div class="blog-thumb" style="background:linear-gradient(135deg,#4CAF50,#388E3C);">
+                        <span>⚡</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-tag cloud" style="background:rgba(76,175,80,0.1);color:#4CAF50;">أداء</span>
+                        <h3>أداء تطبيقات أندرويد: دليل شامل</h3>
+                        <p>تقنيات متقدمة لتحسين السلاسة، تقليل استهلاك الذاكرة وتسريع بدء تشغيل تطبيقاتك.</p>
+                        <div class="blog-date">15 فبراير 2026</div>
+                    </div>
+                </div>
+
+                <!-- Article 6 : Securite -->
+                <div class="blog-card brutal-card">
+                    <div class="blog-thumb" style="background:linear-gradient(135deg,#2196F3,#1976D2);">
+                        <span>🔒</span>
+                    </div>
+                    <div class="blog-body">
+                        <span class="blog-tag ai" style="background:rgba(33,150,243,0.1);color:#2196F3;">أمن</span>
+                        <h3>أمن التطبيقات المحمولة: أفضل الممارسات</h3>
+                        <p>كيف تحمي بيانات مستخدميك وتؤمّن تطبيقك ضد أكثر التهديدات شيوعًا في 2026.</p>
+                        <div class="blog-date">8 فبراير 2026</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ CTA Banner ══ -->
+    <section class="section">
+        <div class="cta-banner brutal-card-accent">
+            <h2>لديك موضوع تقترحه علينا؟</h2>
+            <p>نحب مشاركة معارفنا. تواصل معنا لاقتراح موضوع مقال أو مناقشة شراكة.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-white">
+                    <span class="material-icons-round">mail</span>
+                    تواصل معنا
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ Footer ══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo" style="color:white;">
+                        <span class="logo-icon">SC</span>
+                        SLAMA Consulting
+                    </a>
+                    <p>وكالة استشارات تكنولوجيا المعلومات والتطوير الرقمي. نحوّل أفكاركم إلى حلول فعّالة.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>التنقل</h4>
+                    <a href="index.html">الرئيسية</a>
+                    <a href="services.html">الخدمات</a>
+                    <a href="portfolio.html">المشاريع</a>
+                    <a href="blog.html">المدونة</a>
+                    <a href="contact.html">اتصل بنا</a>
+                </div>
+                <div class="footer-col">
+                    <h4>الخدمات</h4>
+                    <a href="services.html">تطوير التطبيقات</a>
+                    <a href="services.html">تطوير المواقع</a>
+                    <a href="services.html">السحابة و DevOps</a>
+                    <a href="services.html">استشارات تكنولوجية</a>
+                    <a href="services.html">تصميم واجهات المستخدم</a>
+                </div>
+                <div class="footer-col">
+                    <h4>قانوني</h4>
+                    <a href="privacy.html">سياسة الخصوصية</a>
+                    <a href="about.html">من نحن</a>
+                    <a href="contact.html">اتصل بنا</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 SLAMA Consulting. جميع الحقوق محفوظة.</span>
+                <span>صُنع بكل حب في فرنسا</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

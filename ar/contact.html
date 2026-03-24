@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SLAMA Consulting — تواصل معنا للحصول على عرض أسعار مجاني. تطوير تطبيقات الهاتف والويب، استشارات تكنولوجية وتحول رقمي.">
+    <title>اتصل بنا — SLAMA Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>[dir="rtl"] body { font-family: 'Noto Sans Arabic', 'Space Grotesk', sans-serif; }</style>
+</head>
+<body>
+
+    <!-- ══ Navbar ══ -->
+    <nav class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="navbar-logo">
+                <span class="logo-icon">SC</span>
+                SLAMA Consulting
+            </a>
+            <button class="nav-toggle" aria-label="القائمة">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="navbar-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="services.html">الخدمات</a></li>
+                <li><a href="portfolio.html">المشاريع</a></li>
+                <li><a href="blog.html">المدونة</a></li>
+                <li><a href="contact.html" class="active">اتصل بنا</a></li>
+                <li class="navbar-cta"><a href="contact.html" class="btn btn-primary">عرض أسعار مجاني</a></li>
+                <li class="lang-switcher">
+                    <a href="../contact.html" class="lang-btn">EN</a>
+                    <a href="../fr/contact.html" class="lang-btn">FR</a>
+                    <a href="contact.html" class="lang-btn active">AR</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ══ Hero ══ -->
+    <section class="hero" style="padding-bottom:40px;">
+        <div class="container" style="text-align:center;">
+            <div class="section-label">اتصل بنا</div>
+            <h1 style="font-size:44px;font-weight:700;margin-bottom:16px;">لنتحدث عن <span style="color:var(--primary);">مشروعك</span></h1>
+            <p style="font-size:18px;color:var(--ink-light);max-width:600px;margin:0 auto;">املأ النموذج أدناه أو تواصل معنا مباشرة. نرد عليكم خلال 24 ساعة.</p>
+        </div>
+    </section>
+
+    <!-- ══ Contact Form + Info ══ -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form brutal-card">
+                    <h3 style="font-size:20px;font-weight:700;margin-bottom:24px;">
+                        <span class="material-icons-round" style="vertical-align:middle;margin-left:8px;color:var(--primary);">send</span>
+                        طلب عرض أسعار مجاني
+                    </h3>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="d50b97eb-2f3a-4c03-8bcc-d6ed865e628c">
+                        <input type="hidden" name="subject" value="رسالة جديدة من موقع SLAMA Consulting (عربي)">
+                        <input type="hidden" name="from_name" value="SLAMA Consulting Website (AR)">
+                        <input type="hidden" name="redirect" value="https://slama-consulting.github.io/slama-consulting/ar/success.html">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل *</label>
+                            <input type="text" id="name" name="name" placeholder="اسمك الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني *</label>
+                            <input type="email" id="email" name="email" placeholder="بريدك@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">الخدمة المطلوبة *</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>اختر خدمة</option>
+                                <option value="mobile">تطوير التطبيقات</option>
+                                <option value="web">تطوير المواقع</option>
+                                <option value="cloud">السحابة و DevOps</option>
+                                <option value="consulting">استشارات تكنولوجية</option>
+                                <option value="ux">تصميم واجهات المستخدم</option>
+                                <option value="digital">التحول الرقمي</option>
+                                <option value="autre">أخرى</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">رسالتك *</label>
+                            <textarea id="message" name="message" placeholder="صِف مشروعك واحتياجاتك وأهدافك..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+                            <span class="material-icons-round">send</span>
+                            إرسال طلبي
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-icons-round" style="color:var(--primary);">mail</span>
+                        </div>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <p>slama.walid1985@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-icons-round" style="color:var(--primary);">location_on</span>
+                        </div>
+                        <div>
+                            <h4>الموقع</h4>
+                            <p>فرنسا</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-icons-round" style="color:var(--primary);">schedule</span>
+                        </div>
+                        <div>
+                            <h4>التوفر</h4>
+                            <p>الاثنين - الجمعة، 9 صباحًا - 6 مساءً</p>
+                        </div>
+                    </div>
+
+                    <div class="brutal-card" style="padding:24px;margin-top:16px;">
+                        <h4 style="font-size:15px;font-weight:700;margin-bottom:8px;">
+                            <span class="material-icons-round" style="vertical-align:middle;margin-left:6px;color:var(--accent);font-size:20px;">bolt</span>
+                            رد سريع
+                        </h4>
+                        <p style="font-size:14px;color:var(--ink-light);line-height:1.6;">نلتزم بالرد عليكم خلال 24 ساعة من استلام رسالتكم.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ Footer ══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo" style="color:white;">
+                        <span class="logo-icon">SC</span>
+                        SLAMA Consulting
+                    </a>
+                    <p>وكالة استشارات تكنولوجيا المعلومات والتطوير الرقمي. نحوّل أفكاركم إلى حلول فعّالة.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>التنقل</h4>
+                    <a href="index.html">الرئيسية</a>
+                    <a href="services.html">الخدمات</a>
+                    <a href="portfolio.html">المشاريع</a>
+                    <a href="blog.html">المدونة</a>
+                    <a href="contact.html">اتصل بنا</a>
+                </div>
+                <div class="footer-col">
+                    <h4>الخدمات</h4>
+                    <a href="services.html">تطوير التطبيقات</a>
+                    <a href="services.html">تطوير المواقع</a>
+                    <a href="services.html">السحابة و DevOps</a>
+                    <a href="services.html">استشارات تكنولوجية</a>
+                    <a href="services.html">تصميم واجهات المستخدم</a>
+                </div>
+                <div class="footer-col">
+                    <h4>قانوني</h4>
+                    <a href="privacy.html">سياسة الخصوصية</a>
+                    <a href="about.html">من نحن</a>
+                    <a href="contact.html">اتصل بنا</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 SLAMA Consulting. جميع الحقوق محفوظة.</span>
+                <span>صُنع بكل حب في فرنسا</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

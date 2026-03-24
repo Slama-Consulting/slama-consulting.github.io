@@ -778,6 +778,61 @@ img { max-width: 100%; height: auto; }
 }
 .legal-content ul { padding-left: 24px; }
 
+/* ── Language Switcher ── */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 8px;
+}
+.lang-btn {
+    padding: 4px 10px;
+    border: 1px solid var(--outline);
+    border-radius: 6px;
+    background: transparent;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink-light);
+    cursor: pointer;
+    transition: all var(--transition);
+    text-decoration: none;
+}
+.lang-btn:hover { border-color: var(--primary); color: var(--primary); }
+.lang-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+/* ── RTL Support (Arabic) ── */
+[dir="rtl"] { direction: rtl; text-align: right; }
+[dir="rtl"] .navbar-inner { flex-direction: row-reverse; }
+[dir="rtl"] .navbar-links { flex-direction: row-reverse; }
+[dir="rtl"] .hero-content { flex-direction: row-reverse; }
+[dir="rtl"] .hero-text { text-align: right; }
+[dir="rtl"] .hero-buttons { justify-content: flex-start; }
+[dir="rtl"] .portfolio-showcase { flex-direction: row-reverse; }
+[dir="rtl"] .contact-grid { direction: rtl; }
+[dir="rtl"] .footer-grid { direction: rtl; }
+[dir="rtl"] .about-content { flex-direction: row-reverse; }
+[dir="rtl"] .brutal-card::after { left: auto; right: var(--brutal-offset); }
+[dir="rtl"] .brutal-card-accent::after { left: auto; right: var(--brutal-offset); }
+[dir="rtl"] .btn::after { left: auto; right: var(--brutal-offset); }
+[dir="rtl"] .lang-switcher { margin-left: 0; margin-right: 8px; }
+[dir="rtl"] .navbar-cta { margin-left: 0; margin-right: 16px; }
+[dir="rtl"] .section-subtitle { text-align: right; }
+[dir="rtl"] .portfolio-info { text-align: right; }
+[dir="rtl"] .contact-item { flex-direction: row-reverse; text-align: right; }
+
+@media (max-width: 768px) {
+    [dir="rtl"] .hero-content { flex-direction: column; text-align: center; }
+    [dir="rtl"] .hero-text { text-align: center; }
+    [dir="rtl"] .portfolio-showcase { flex-direction: column; text-align: center; }
+    [dir="rtl"] .portfolio-info { text-align: center; }
+    [dir="rtl"] .navbar-inner { flex-direction: row-reverse; }
+}
+
 /* ── Utility ── */
 .text-center { text-align: center; }
 .text-primary { color: var(--primary); }
