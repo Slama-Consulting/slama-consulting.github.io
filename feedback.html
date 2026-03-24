@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SLAMA Consulting — Report a bug, suggest a feature, or send us a request about our applications.">
+    <title>Feedback — SLAMA Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- ══ Navbar ══ -->
+    <nav class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="navbar-logo">
+                <span class="logo-icon">SC</span>
+                SLAMA Consulting
+            </a>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+                <li class="lang-switcher">
+                    <a href="feedback.html" class="lang-btn active">EN</a>
+                    <a href="fr/feedback.html" class="lang-btn">FR</a>
+                    <a href="ar/feedback.html" class="lang-btn">AR</a>
+                </li>
+                <li class="navbar-cta"><a href="contact.html" class="btn btn-primary">Free Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ══ Hero ══ -->
+    <section class="hero" style="padding-bottom:40px;">
+        <div class="container" style="text-align:center;">
+            <div class="section-label">Feedback</div>
+            <h1 style="font-size:44px;font-weight:700;margin-bottom:16px;">
+                <span class="material-icons-round" style="font-size:48px;vertical-align:middle;color:var(--primary);margin-right:12px;">bug_report</span>
+                Help us <span style="color:var(--primary);">improve</span>
+            </h1>
+            <p style="font-size:18px;color:var(--ink-light);max-width:600px;margin:0 auto;">Report a bug, suggest a new feature, or send us any request about our applications.</p>
+        </div>
+    </section>
+
+    <!-- ══ Feedback Form ══ -->
+    <section class="section">
+        <div class="container" style="max-width:700px;">
+            <div class="contact-form brutal-card">
+                <h3 style="font-size:20px;font-weight:700;margin-bottom:24px;">
+                    <span class="material-icons-round" style="vertical-align:middle;margin-right:8px;color:var(--primary);">feedback</span>
+                    Send us your feedback
+                </h3>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="d50b97eb-2f3a-4c03-8bcc-d6ed865e628c">
+                    <input type="hidden" name="subject" value="Feedback — SLAMA Consulting">
+                    <input type="hidden" name="from_name" value="SLAMA Consulting Feedback">
+                    <input type="hidden" name="redirect" value="https://slama-consulting.github.io/slama-consulting/success.html">
+                    <div class="form-group">
+                        <label for="app">Application *</label>
+                        <select id="app" name="application" required>
+                            <option value="" disabled selected>Choose an application</option>
+                            <option value="sporttracking">SportTracking</option>
+                            <option value="mathquizkids">MathQuizKids</option>
+                            <option value="ecommerce">E-commerce Web App</option>
+                            <option value="saas-dashboard">SaaS Analytics Dashboard</option>
+                            <option value="ai-chatbot">Enterprise AI Chatbot</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Request Type *</label>
+                        <select id="type" name="request_type" required>
+                            <option value="" disabled selected>Choose the type of request</option>
+                            <option value="bug">Bug Report</option>
+                            <option value="feature">New Feature Suggestion</option>
+                            <option value="other">Other Request</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Description *</label>
+                        <textarea id="message" name="message" placeholder="Describe the bug, the feature you'd like, or your request in detail..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+                        <span class="material-icons-round">send</span>
+                        Send Feedback
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ Footer ══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo" style="color:white;">
+                        <span class="logo-icon">SC</span>
+                        SLAMA Consulting
+                    </a>
+                    <p>IT consulting and digital development agency. We transform your ideas into high-performance solutions.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="services.html">Mobile Dev</a>
+                    <a href="services.html">Web Dev</a>
+                    <a href="services.html">Cloud & DevOps</a>
+                    <a href="services.html">IT Consulting</a>
+                    <a href="services.html">UI/UX Design</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 SLAMA Consulting. All rights reserved.</span>
+                <span>Made with ❤️ in France</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

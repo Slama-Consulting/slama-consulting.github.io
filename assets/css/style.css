@@ -183,6 +183,25 @@ img {
     overflow: hidden;
 }
 
+.brutal-card-accent h1,
+.brutal-card-accent h2,
+.brutal-card-accent h3,
+.brutal-card-accent h4,
+.brutal-card-accent p,
+.brutal-card-accent a:not(.btn-white),
+.brutal-card-accent span,
+.brutal-card-accent li {
+    color: white;
+}
+
+.brutal-card-accent .btn-white {
+    color: var(--primary) !important;
+}
+
+.brutal-card-accent .btn-white span {
+    color: var(--primary) !important;
+}
+
 .brutal-card-accent::before {
     content: '';
     position: absolute;
@@ -250,8 +269,17 @@ img {
 /* Primary button with gradient */
 .btn-primary {
     background: var(--gradient-primary);
-    color: white;
+    color: white !important;
     box-shadow: 0 4px 16px rgba(255,107,53,0.25);
+}
+
+.btn-primary span,
+.btn-primary .material-icons-round {
+    color: white !important;
+}
+
+.navbar-links .btn-primary {
+    color: white !important;
 }
 
 .btn-primary::after {
@@ -260,7 +288,7 @@ img {
 
 .btn-primary:hover {
     box-shadow: 0 8px 28px rgba(255,107,53,0.35);
-    color: white;
+    color: white !important;
 }
 
 /* Outline button */
@@ -326,6 +354,19 @@ img {
     position: relative;
 }
 
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4,
+.section-dark p,
+.section-dark span,
+.section-dark li,
+.section-dark .section-label,
+.section-dark .section-title,
+.section-dark .section-subtitle {
+    color: white;
+}
+
 .section-dark::before {
     content: '';
     position: absolute;
@@ -339,11 +380,64 @@ img {
     color: white;
 }
 
+.section-primary h1,
+.section-primary h2,
+.section-primary h3,
+.section-primary h4,
+.section-primary p,
+.section-primary a:not(.btn-white),
+.section-primary span,
+.section-primary li,
+.section-primary .section-label,
+.section-primary .section-title,
+.section-primary .section-subtitle {
+    color: white;
+}
+
+.section-primary .section-label::before {
+    background: white;
+}
+
+.section-primary .btn-white {
+    color: var(--primary) !important;
+}
+
+.section-primary .btn-white span {
+    color: var(--primary) !important;
+}
+
 .section-warm {
     background: linear-gradient(135deg, #3D2010 0%, #5C2E15 50%, #7A3A1A 100%);
     color: white;
     position: relative;
     overflow: hidden;
+}
+
+.section-warm h1,
+.section-warm h2,
+.section-warm h3,
+.section-warm h4,
+.section-warm p,
+.section-warm a:not(.btn-white),
+.section-warm span,
+.section-warm li,
+.section-warm .section-label,
+.section-warm .section-title,
+.section-warm .section-subtitle,
+.section-warm .portfolio-feature {
+    color: white;
+}
+
+.section-warm .btn-white {
+    color: var(--primary) !important;
+}
+
+.section-warm .btn-white span {
+    color: var(--primary) !important;
+}
+
+.section-warm .section-label::before {
+    background: white;
 }
 
 .section-warm::before {
@@ -695,6 +789,25 @@ img {
     color: white;
     text-align: center;
     position: relative;
+}
+
+.hero-phone-screen h1,
+.hero-phone-screen h2,
+.hero-phone-screen h3,
+.hero-phone-screen h4,
+.hero-phone-screen p,
+.hero-phone-screen > span,
+.hero-phone-screen .app-name,
+.hero-phone-screen .app-tagline {
+    color: white;
+}
+
+.hero-phone-screen a {
+    color: inherit;
+}
+
+.hero-phone-screen a span {
+    color: inherit !important;
 }
 
 /* Subtle screen shine */
@@ -1649,7 +1762,7 @@ img {
 
 .lang-btn.active {
     background: var(--primary);
-    color: white;
+    color: white !important;
     border-color: var(--primary);
     box-shadow: 0 2px 8px rgba(255,107,53,0.3);
 }
