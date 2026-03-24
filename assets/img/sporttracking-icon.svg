@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B35"/>
+      <stop offset="100%" stop-color="#E55A2B"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="24" fill="url(#bg)"/>
+  <!-- GPS Pin -->
+  <path d="M60,85 C60,85 40,65 40,50 C40,39 48.9,30 60,30 C71.1,30 80,39 80,50 C80,65 60,85 60,85 Z" fill="#FFFFFF" fill-opacity="0.95"/>
+  <!-- Swoosh route curve -->
+  <path d="M46,52 C49.5,45 55,48 58.5,44 C62,40 67.5,43 73,51" stroke="#E55A2B" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+  <!-- Route dots -->
+  <circle cx="50" cy="92" r="2.2" fill="#FFFFFF" fill-opacity="0.6"/>
+  <circle cx="60" cy="94" r="2.2" fill="#FFFFFF" fill-opacity="0.4"/>
+  <circle cx="70" cy="92" r="2.2" fill="#FFFFFF" fill-opacity="0.2"/>
+</svg>
