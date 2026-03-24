@@ -6,12 +6,24 @@
     </linearGradient>
   </defs>
   <rect width="120" height="120" rx="24" fill="url(#bg)"/>
-  <!-- GPS Pin -->
-  <path d="M60,85 C60,85 40,65 40,50 C40,39 48.9,30 60,30 C71.1,30 80,39 80,50 C80,65 60,85 60,85 Z" fill="#FFFFFF" fill-opacity="0.95"/>
-  <!-- Swoosh route curve -->
-  <path d="M46,52 C49.5,45 55,48 58.5,44 C62,40 67.5,43 73,51" stroke="#E55A2B" stroke-width="3.2" stroke-linecap="round" fill="none"/>
-  <!-- Route dots -->
-  <circle cx="50" cy="92" r="2.2" fill="#FFFFFF" fill-opacity="0.6"/>
-  <circle cx="60" cy="94" r="2.2" fill="#FFFFFF" fill-opacity="0.4"/>
-  <circle cx="70" cy="92" r="2.2" fill="#FFFFFF" fill-opacity="0.2"/>
+  <g transform="translate(60,60) scale(0.79) translate(-54,-54) translate(0.5,5)">
+    <!-- Letter S as GPS route -->
+    <path d="M60,30 Q60,25 55,25 L51,25 Q44,25 44,32 Q44,39 51,39 L55,39 Q62,39 62,46 Q62,53 55,53 L51,53 Q46,53 46,48"
+          stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Start point green -->
+    <circle cx="60" cy="30" r="3.5" fill="#4CAF50"/>
+    <circle cx="60" cy="30" r="1.8" fill="#FFFFFF"/>
+    <!-- End point red -->
+    <circle cx="46" cy="48" r="3.5" fill="#F44336"/>
+    <circle cx="46" cy="48" r="1.8" fill="#FFFFFF"/>
+    <!-- GPS dots -->
+    <circle cx="51" cy="25" r="1.4" fill="rgba(255,255,255,0.5)"/>
+    <circle cx="44" cy="32" r="1.4" fill="rgba(255,255,255,0.5)"/>
+    <circle cx="53" cy="39" r="1.4" fill="rgba(255,255,255,0.5)"/>
+    <circle cx="62" cy="46" r="1.4" fill="rgba(255,255,255,0.5)"/>
+    <circle cx="55" cy="53" r="1.4" fill="rgba(255,255,255,0.5)"/>
+    <!-- Heartbeat line -->
+    <path d="M30,68 L38,68 L42,68 L45,68 L48,62 L51,74 L54,60 L58,72 L61,67 L63,68 L66,68 L72,68 L78,68"
+          stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
 </svg>
